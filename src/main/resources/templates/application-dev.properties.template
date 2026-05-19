@@ -1,0 +1,7 @@
+# Configuración de Base de Datos Local (Plantilla)
+spring.datasource.url=jdbc:postgresql://localhost:5432/tu_base_de_datos
+spring.datasource.username=TU_USUARIO_AQUÍ
+spring.datasource.password=TU_CONTRASEÑA_AQUÍ
+
+# Configuración de Inteligencia Artificial
+langchain4j.open-ai.api-key=TU_API_KEY_AQUÍ
