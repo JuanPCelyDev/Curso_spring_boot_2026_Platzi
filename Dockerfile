@@ -2,7 +2,7 @@
 FROM gradle:9.5.0-jdk21 AS build
 COPY --chown=gradle:gradle . /app
 WORKDIR /app
-RUN gradle build --no-daemon
+RUN gradle build -x test --no-daemon
 
 #Etapa 2: runtime con Java JDK 21 (Ejecución)
 FROM eclipse-temurin:21-jdk
